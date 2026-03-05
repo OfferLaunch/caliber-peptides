@@ -1,18 +1,18 @@
 <?php
-// VitaRevive - Child Theme Functions
+// Caliber Peptides - Child Theme Functions
 
 add_action('wp_enqueue_scripts', function() {
     wp_enqueue_style('blocksy-parent', get_template_directory_uri() . '/style.css');
-    wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap', [], null);
+    wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:wght@300;400;500;600&display=swap', [], null);
     wp_enqueue_style('blocksy-child', get_stylesheet_uri(), array('blocksy-parent', 'google-fonts'));
 });
 
 // Trust badges below Add to Cart
 add_action('woocommerce_single_product_summary', function() {
     echo '<div class="product-trust-strip">
-        <div class="pts-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#5d8161" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg> COA Included</div>
-        <div class="pts-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#5d8161" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg> 99%+ Purity</div>
-        <div class="pts-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#5d8161" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg> Ships in 24-48h</div>
+        <div class="pts-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#00A3FF" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg> COA Included</div>
+        <div class="pts-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#00A3FF" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg> 99%+ Purity</div>
+        <div class="pts-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#00A3FF" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg> Ships in 24-48h</div>
     </div>';
 }, 35);
 
