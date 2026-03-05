@@ -3,160 +3,152 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Caliber Peptides — Precision Research Compounds</title>
-<meta name="description" content="Caliber Peptides — Premium research-grade peptide compounds. Batch produced, batch tested in the USA. Precision compounds for serious research.">
-<meta name="keywords" content="research peptides, peptide compounds, BPC-157, semaglutide, NAD+, research chemicals, lab-tested peptides">
-<meta property="og:title" content="Caliber Peptides — Precision Research Compounds">
-<meta property="og:description" content="Batch produced, batch tested research peptide compounds. Manufactured in the USA to exacting purity standards.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://caliberpeptides.co">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@CaliberPeptides">
+<title>Caliber Peptides — Research-Grade Peptide Compounds</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-:root{--bg:#0B0B0F;--bg-card:#111116;--bg-alt:#16161C;--text:#E8E8EC;--text-muted:rgba(232,232,236,.55);--accent:#00A3FF;--gold:#C9A96E;--border:rgba(255,255,255,.08);--white:#FAFAFA}
+:root{--cream:#FAF6F0;--sage:#A8B5A0;--forest:#2D3B2D;--gold:#C9A96E;--blush:#E8CFC0;--terra:#C4745A;--euca:#D4DDD2;--white:#fff}
 html{scroll-behavior:smooth}
-body{font-family:'DM Sans',sans-serif;color:var(--text);background:var(--bg);line-height:1.7;font-weight:400}
+body{font-family:'DM Sans',sans-serif;color:var(--forest);background:var(--cream);line-height:1.7;font-weight:400}
 h1,h2,h3,h4{font-family:'Playfair Display',serif;font-weight:500;line-height:1.25}
 a{color:inherit;text-decoration:none}
 img{max-width:100%;display:block}
 .container{max-width:1200px;margin:0 auto;padding:0 24px}
 /* TOP BAR */
-.top-bar{background:#06060A;color:var(--text);padding:10px 24px;display:flex;justify-content:center;gap:40px;font-size:.75rem;font-weight:500;letter-spacing:.06em;text-transform:uppercase;position:fixed;top:0;left:0;right:0;z-index:110;flex-wrap:wrap;border-bottom:1px solid var(--border)}
-.top-bar span{opacity:.6}
+.top-bar{background:var(--forest);color:var(--cream);padding:10px 24px;display:flex;justify-content:center;gap:40px;font-size:.75rem;font-weight:500;letter-spacing:.06em;text-transform:uppercase;position:fixed;top:0;left:0;right:0;z-index:110;flex-wrap:wrap}
+.top-bar span{opacity:.8}
 /* NAV */
-nav{position:fixed;top:36px;left:0;right:0;z-index:100;background:rgba(11,11,15,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);transition:box-shadow .3s}
-nav.scrolled{box-shadow:0 2px 20px rgba(0,0,0,.3)}
+nav{position:fixed;top:36px;left:0;right:0;z-index:100;background:rgba(250,246,240,.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(168,181,160,.15);transition:box-shadow .3s}
+nav.scrolled{box-shadow:0 2px 20px rgba(45,59,45,.08)}
 .nav-inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:72px}
-.logo{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:600;letter-spacing:.02em;color:var(--text)}
-.logo span{color:var(--accent)}
+.logo{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:600;letter-spacing:.02em;color:var(--forest)}
+.logo span{color:var(--terra)}
 .nav-links{display:flex;gap:32px;font-size:.875rem;font-weight:500;letter-spacing:.04em;text-transform:uppercase}
-.nav-links a{transition:color .3s;color:var(--text);opacity:.7}
-.nav-links a:hover{color:var(--accent);opacity:1}
+.nav-links a{transition:color .3s}
+.nav-links a:hover{color:var(--terra)}
 .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
-.hamburger span{display:block;width:24px;height:2px;background:var(--text);transition:all .3s}
-.mobile-menu{display:none;position:fixed;inset:0;top:108px;background:var(--bg);flex-direction:column;align-items:center;justify-content:center;gap:32px;z-index:99}
+.hamburger span{display:block;width:24px;height:2px;background:var(--forest);transition:all .3s}
+.mobile-menu{display:none;position:fixed;inset:0;top:108px;background:var(--cream);flex-direction:column;align-items:center;justify-content:center;gap:32px;z-index:99}
 .mobile-menu.open{display:flex}
-.mobile-menu a{font-family:'Playfair Display',serif;font-size:1.5rem;color:var(--text)}
+.mobile-menu a{font-family:'Playfair Display',serif;font-size:1.5rem}
 /* HERO */
-.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:160px 24px 80px;background:var(--bg);position:relative;overflow:hidden}
-.hero::before{content:'';position:absolute;top:-20%;right:-10%;width:500px;height:500px;border-radius:50%;background:var(--accent);opacity:.06;filter:blur(120px)}
-.hero::after{content:'';position:absolute;bottom:-10%;left:-5%;width:400px;height:400px;border-radius:50%;background:#1A1A3E;opacity:.15;filter:blur(80px)}
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:160px 24px 80px;background:var(--cream);position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-20%;right:-10%;width:500px;height:500px;border-radius:50%;background:var(--euca);opacity:.3;filter:blur(100px)}
+.hero::after{content:'';position:absolute;bottom:-10%;left:-5%;width:400px;height:400px;border-radius:50%;background:var(--blush);opacity:.25;filter:blur(80px)}
 .hero-content{position:relative;z-index:1;max-width:760px}
-.hero h1{font-size:clamp(2.5rem,6vw,4.5rem);color:var(--text);margin-bottom:24px;font-weight:400;font-style:italic}
-.hero p.hero-sub{font-size:clamp(1rem,2vw,1.25rem);color:var(--text);opacity:.55;max-width:540px;margin:0 auto 48px;font-weight:300}
+.hero h1{font-size:clamp(2.5rem,6vw,4.5rem);color:var(--forest);margin-bottom:24px;font-weight:400;font-style:italic}
+.hero p.hero-sub{font-size:clamp(1rem,2vw,1.25rem);color:var(--forest);opacity:.75;max-width:540px;margin:0 auto 48px;font-weight:300}
 .btn{display:inline-block;padding:16px 40px;font-family:'DM Sans',sans-serif;font-size:.875rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;border:none;cursor:pointer;transition:all .35s ease}
-.btn-primary{background:var(--accent);color:#fff;border-radius:0}
-.btn-primary:hover{background:#0080CC}
-.btn-outline{background:transparent;color:var(--text);border:1.5px solid rgba(255,255,255,.2);border-radius:0}
-.btn-outline:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
+.btn-primary{background:var(--forest);color:var(--cream);border-radius:0}
+.btn-primary:hover{background:var(--terra)}
+.btn-outline{background:transparent;color:var(--forest);border:1.5px solid var(--forest);border-radius:0}
+.btn-outline:hover{background:var(--forest);color:var(--cream)}
 /* RUO BLOCK */
-.ruo-block{padding:80px 24px;background:var(--bg-card);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.ruo-block{padding:80px 24px;background:var(--white);border-top:1px solid var(--euca);border-bottom:1px solid var(--euca)}
 .ruo-inner{max-width:800px;margin:0 auto;text-align:center}
-.ruo-inner h2{font-size:clamp(1.6rem,3.5vw,2.4rem);color:var(--text);margin-bottom:24px}
-.ruo-inner p{font-size:.95rem;color:var(--text);opacity:.45;font-weight:300;line-height:1.9;max-width:680px;margin:0 auto}
+.ruo-inner h2{font-size:clamp(1.6rem,3.5vw,2.4rem);color:var(--forest);margin-bottom:24px}
+.ruo-inner p{font-size:.95rem;color:var(--forest);opacity:.65;font-weight:300;line-height:1.9;max-width:680px;margin:0 auto}
 /* TRUST BAR */
-.trust-bar{padding:60px 24px;background:var(--bg)}
+.trust-bar{padding:60px 24px;background:var(--cream)}
 .trust-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;max-width:900px;margin:0 auto;text-align:center}
 .trust-item h3{font-size:1.1rem;margin-bottom:8px;font-weight:500}
-.trust-item p{font-size:.9rem;opacity:.45;font-weight:300}
+.trust-item p{font-size:.9rem;opacity:.6;font-weight:300}
 .trust-item .trust-icon{width:48px;height:48px;border-radius:50%;border:1.5px solid var(--gold);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--gold)}
 /* PRODUCTS */
-.products{padding:120px 24px;background:var(--bg)}
+.products{padding:120px 24px;background:var(--cream)}
 .products-header{text-align:center;margin-bottom:64px}
-.products-header h2{font-size:clamp(1.8rem,4vw,2.8rem);color:var(--text)}
+.products-header h2{font-size:clamp(1.8rem,4vw,2.8rem);color:var(--forest)}
 .products-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;max-width:1200px;margin:0 auto}
-.product-card{background:var(--bg-card);overflow:hidden;transition:transform .4s ease,box-shadow .4s ease;border:1px solid var(--border)}
-.product-card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,163,255,.08)}
-.product-img{aspect-ratio:1/1;background:var(--bg-alt);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
-.product-img::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,#1A1A2E 0%,#16161C 50%,#0B0B0F 100%);opacity:.5}
-.product-img svg{position:relative;z-index:1;width:48px;height:48px;opacity:.2;stroke:var(--accent)}
+.product-card{background:var(--white);overflow:hidden;transition:transform .4s ease,box-shadow .4s ease}
+.product-card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(45,59,45,.08)}
+.product-img{aspect-ratio:1/1;background:var(--euca);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.product-img::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,var(--sage) 0%,var(--euca) 50%,var(--blush) 100%);opacity:.5}
+.product-img svg{position:relative;z-index:1;width:48px;height:48px;opacity:.3}
 .product-info{padding:28px 24px}
 .product-info h3{font-size:1.15rem;margin-bottom:6px;font-weight:500}
-.product-info .product-cat{font-size:.75rem;color:var(--accent);font-weight:500;letter-spacing:.04em;text-transform:uppercase;margin-bottom:16px;opacity:.7}
-.product-info .product-ruo{font-size:.65rem;color:var(--accent);font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-bottom:20px;padding:6px 0;border-top:1px solid var(--border)}
+.product-info .product-cat{font-size:.75rem;color:var(--sage);font-weight:500;letter-spacing:.04em;text-transform:uppercase;margin-bottom:16px}
+.product-info .product-ruo{font-size:.65rem;color:var(--terra);font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-bottom:20px;padding:6px 0;border-top:1px solid var(--euca)}
 .product-info .btn-outline{padding:12px 28px;font-size:.75rem;width:100%;text-align:center}
 /* COA SECTION */
-.coa{padding:100px 24px;background:var(--bg-card)}
+.coa{padding:100px 24px;background:var(--white)}
 .coa-inner{max-width:900px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
-.coa-text .section-label{font-size:.75rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--accent);margin-bottom:16px;opacity:.7}
-.coa-text h2{font-size:clamp(1.6rem,3.5vw,2.4rem);color:var(--text);margin-bottom:20px}
-.coa-text p{font-size:.95rem;color:var(--text);opacity:.5;font-weight:300;line-height:1.9}
-.coa-visual{background:var(--bg-alt);border:1px solid var(--border);aspect-ratio:4/3;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px;text-align:center}
-.coa-visual .coa-purity{font-family:'Playfair Display',serif;font-size:3.5rem;color:var(--accent);font-weight:600;line-height:1}
-.coa-visual .coa-label{font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--text);margin-top:8px;font-weight:500;opacity:.5}
-.coa-visual .coa-methods{font-size:.8rem;color:var(--text);opacity:.35;margin-top:24px;font-weight:300;line-height:1.8}
-.section-label{font-size:.75rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--accent);margin-bottom:16px;opacity:.7}
+.coa-text .section-label{font-size:.75rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--sage);margin-bottom:16px}
+.coa-text h2{font-size:clamp(1.6rem,3.5vw,2.4rem);color:var(--forest);margin-bottom:20px}
+.coa-text p{font-size:.95rem;color:var(--forest);opacity:.65;font-weight:300;line-height:1.9}
+.coa-visual{background:var(--euca);aspect-ratio:4/3;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px;text-align:center}
+.coa-visual .coa-purity{font-family:'Playfair Display',serif;font-size:3.5rem;color:var(--forest);font-weight:600;line-height:1}
+.coa-visual .coa-label{font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--sage);margin-top:8px;font-weight:500}
+.coa-visual .coa-methods{font-size:.8rem;color:var(--forest);opacity:.5;margin-top:24px;font-weight:300;line-height:1.8}
+.section-label{font-size:.75rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--sage);margin-bottom:16px}
 /* HOW IT WORKS */
-.how{padding:120px 24px;background:var(--bg)}
+.how{padding:120px 24px;background:var(--cream)}
 .how-header{text-align:center;margin-bottom:72px}
-.how-header h2{font-size:clamp(1.8rem,4vw,2.8rem);color:var(--text)}
+.how-header h2{font-size:clamp(1.8rem,4vw,2.8rem);color:var(--forest)}
 .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:48px;max-width:960px;margin:0 auto;text-align:center}
 .step-num{width:64px;height:64px;border-radius:50%;border:1.5px solid var(--gold);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:1.5rem;color:var(--gold);margin:0 auto 24px}
 .step h3{font-size:1.25rem;margin-bottom:12px}
-.step p{font-size:.95rem;opacity:.45;font-weight:300;max-width:280px;margin:0 auto}
+.step p{font-size:.95rem;opacity:.65;font-weight:300;max-width:280px;margin:0 auto}
 /* FAQ */
-.faq{padding:120px 24px;background:var(--bg-card)}
+.faq{padding:120px 24px;background:var(--white)}
 .faq-header{text-align:center;margin-bottom:64px}
-.faq-header h2{font-size:clamp(1.8rem,4vw,2.8rem);color:var(--text)}
+.faq-header h2{font-size:clamp(1.8rem,4vw,2.8rem);color:var(--forest)}
 .faq-list{max-width:720px;margin:0 auto}
-.faq-item{border-bottom:1px solid var(--border)}
-.faq-item:first-child{border-top:1px solid var(--border)}
-.faq-q{width:100%;background:none;border:none;padding:24px 0;display:flex;justify-content:space-between;align-items:center;cursor:pointer;font-family:'DM Sans',sans-serif;font-size:1.05rem;font-weight:500;color:var(--text);text-align:left;gap:16px}
+.faq-item{border-bottom:1px solid var(--euca)}
+.faq-item:first-child{border-top:1px solid var(--euca)}
+.faq-q{width:100%;background:none;border:none;padding:24px 0;display:flex;justify-content:space-between;align-items:center;cursor:pointer;font-family:'DM Sans',sans-serif;font-size:1.05rem;font-weight:500;color:var(--forest);text-align:left;gap:16px}
 .faq-q .icon{font-size:1.25rem;transition:transform .3s;flex-shrink:0;color:var(--gold)}
 .faq-item.open .faq-q .icon{transform:rotate(45deg)}
 .faq-a{max-height:0;overflow:hidden;transition:max-height .4s ease,padding .4s ease}
 .faq-item.open .faq-a{max-height:400px}
-.faq-a p{padding:0 0 24px;font-size:.95rem;opacity:.5;font-weight:300;line-height:1.8;color:var(--text)}
+.faq-a p{padding:0 0 24px;font-size:.95rem;opacity:.65;font-weight:300;line-height:1.8}
 /* NEWSLETTER */
-.newsletter{padding:100px 24px;background:var(--bg);text-align:center}
-.newsletter h2{font-size:clamp(1.6rem,3.5vw,2.4rem);color:var(--text);margin-bottom:12px}
-.newsletter p{opacity:.45;margin-bottom:36px;font-weight:300}
+.newsletter{padding:100px 24px;background:var(--cream);text-align:center}
+.newsletter h2{font-size:clamp(1.6rem,3.5vw,2.4rem);color:var(--forest);margin-bottom:12px}
+.newsletter p{opacity:.6;margin-bottom:36px;font-weight:300}
 .newsletter-form{display:flex;gap:0;max-width:480px;margin:0 auto}
-.newsletter-form input{flex:1;padding:16px 20px;border:1.5px solid rgba(255,255,255,.15);border-right:none;background:var(--bg-card);font-family:'DM Sans',sans-serif;font-size:.9rem;outline:none;color:var(--text)}
-.newsletter-form input::placeholder{color:rgba(255,255,255,.3)}
-.newsletter-form button{padding:16px 32px;background:var(--accent);color:#fff;border:none;font-family:'DM Sans',sans-serif;font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;transition:background .3s}
-.newsletter-form button:hover{background:#0080CC}
+.newsletter-form input{flex:1;padding:16px 20px;border:1.5px solid var(--sage);border-right:none;background:var(--white);font-family:'DM Sans',sans-serif;font-size:.9rem;outline:none}
+.newsletter-form input::placeholder{color:var(--sage)}
+.newsletter-form button{padding:16px 32px;background:var(--forest);color:var(--cream);border:none;font-family:'DM Sans',sans-serif;font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;transition:background .3s}
+.newsletter-form button:hover{background:var(--terra)}
 /* FOOTER */
-footer{padding:64px 24px 32px;background:#06060A;color:var(--text)}
+footer{padding:64px 24px 32px;background:var(--forest);color:var(--cream)}
 .footer-inner{max-width:1200px;margin:0 auto}
 .footer-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:48px}
-.footer-brand .logo{font-size:1.35rem;margin-bottom:12px;color:var(--text)}
-.footer-brand p{font-size:.85rem;opacity:.35;max-width:280px;font-weight:300}
-.footer-col h4{font-size:.75rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;margin-bottom:16px;opacity:.35}
-.footer-col a{display:block;font-size:.9rem;opacity:.5;margin-bottom:10px;transition:opacity .3s}
-.footer-col a:hover{opacity:1;color:var(--accent)}
+.footer-brand .logo{font-size:1.35rem;margin-bottom:12px;color:var(--cream)}
+.footer-brand p{font-size:.85rem;opacity:.5;max-width:280px;font-weight:300}
+.footer-col h4{font-size:.75rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;margin-bottom:16px;opacity:.5}
+.footer-col a{display:block;font-size:.9rem;opacity:.7;margin-bottom:10px;transition:opacity .3s}
+.footer-col a:hover{opacity:1}
 .social-icons{display:flex;gap:16px;margin-top:8px}
-.social-icons a{width:36px;height:36px;border:1px solid rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;font-size:.8rem;transition:all .3s}
-.social-icons a:hover{border-color:var(--accent);color:var(--accent)}
-.footer-bottom{border-top:1px solid var(--border);padding-top:24px}
-.footer-tagline{text-align:center;font-family:'Playfair Display',serif;font-size:1.1rem;margin-bottom:8px;opacity:.6}
-.footer-copy{text-align:center;font-size:.75rem;opacity:.3;font-weight:300;margin-bottom:20px}
-.footer-disclaimer{max-width:800px;margin:0 auto 12px;padding:0;font-size:.7rem;opacity:.3;font-weight:300;line-height:1.8;text-align:center}
+.social-icons a{width:36px;height:36px;border:1px solid rgba(250,246,240,.2);display:flex;align-items:center;justify-content:center;font-size:.8rem;transition:all .3s}
+.social-icons a:hover{border-color:var(--gold);color:var(--gold)}
+.footer-bottom{border-top:1px solid rgba(250,246,240,.1);padding-top:24px}
+.footer-tagline{text-align:center;font-family:'Playfair Display',serif;font-size:1.1rem;margin-bottom:8px;opacity:.8}
+.footer-copy{text-align:center;font-size:.75rem;opacity:.4;font-weight:300;margin-bottom:20px}
+.footer-disclaimer{max-width:800px;margin:0 auto 12px;padding:0;font-size:.7rem;opacity:.4;font-weight:300;line-height:1.8;text-align:center}
 /* RESEARCH LIBRARY */
-.research-library{padding:120px 24px;background:var(--bg-card);border-top:1px solid var(--border)}
+.research-library{padding:120px 24px;background:var(--white);border-top:1px solid var(--euca)}
 .research-header{text-align:center;margin-bottom:64px}
-.research-header h2{font-size:clamp(1.8rem,4vw,2.8rem);color:var(--text)}
-.research-intro{font-size:.9rem;color:var(--text);opacity:.45;font-weight:300;line-height:1.9;max-width:700px;margin:16px auto 0}
+.research-header h2{font-size:clamp(1.8rem,4vw,2.8rem);color:var(--forest)}
+.research-intro{font-size:.9rem;color:var(--forest);opacity:.6;font-weight:300;line-height:1.9;max-width:700px;margin:16px auto 0}
 .research-grid{display:flex;flex-direction:column;gap:0;max-width:900px;margin:0 auto}
-.research-card{border-bottom:1px solid var(--border)}
-.research-card:first-child{border-top:1px solid var(--border)}
+.research-card{border-bottom:1px solid var(--euca)}
+.research-card:first-child{border-top:1px solid var(--euca)}
 .research-card-header{display:flex;justify-content:space-between;align-items:center;padding:28px 0;cursor:pointer;gap:16px}
-.research-card-header h3{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:500;color:var(--text);margin-bottom:4px}
-.research-compound{font-size:.75rem;color:var(--accent);font-weight:500;letter-spacing:.03em;text-transform:uppercase;opacity:.7}
+.research-card-header h3{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:500;color:var(--forest);margin-bottom:4px}
+.research-compound{font-size:.75rem;color:var(--sage);font-weight:500;letter-spacing:.03em;text-transform:uppercase}
 .research-toggle{font-size:1.4rem;color:var(--gold);flex-shrink:0;transition:transform .3s;font-weight:300}
 .research-card.open .research-toggle{transform:rotate(45deg)}
 .research-card-body{max-height:0;overflow:hidden;transition:max-height .5s ease,padding .3s ease}
 .research-card.open .research-card-body{max-height:800px;padding-bottom:32px}
-.research-summary{font-size:.9rem;color:var(--text);opacity:.55;font-weight:300;line-height:1.9;margin-bottom:24px}
-.research-card-body h4{font-size:.75rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:12px;opacity:.7}
+.research-summary{font-size:.9rem;color:var(--forest);opacity:.7;font-weight:300;line-height:1.9;margin-bottom:24px}
+.research-card-body h4{font-size:.75rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--sage);margin-bottom:12px}
 .research-card-body ul{list-style:none;padding:0;margin:0 0 28px}
-.research-card-body ul li{font-size:.85rem;color:var(--text);opacity:.5;font-weight:300;line-height:1.8;padding:4px 0 4px 20px;position:relative}
+.research-card-body ul li{font-size:.85rem;color:var(--forest);opacity:.65;font-weight:300;line-height:1.8;padding:4px 0 4px 20px;position:relative}
 .research-card-body ul li::before{content:'';position:absolute;left:0;top:12px;width:6px;height:6px;border:1px solid var(--gold);border-radius:50%}
-.research-citations{border-top:1px solid var(--border);padding-top:20px}
-.research-citations p{font-size:.8rem;color:var(--text);opacity:.4;font-weight:300;line-height:1.8;margin-bottom:8px}
-.research-citations a{color:var(--accent);text-decoration:underline;text-underline-offset:2px}
+.research-citations{border-top:1px solid var(--euca);padding-top:20px}
+.research-citations p{font-size:.8rem;color:var(--forest);opacity:.55;font-weight:300;line-height:1.8;margin-bottom:8px}
+.research-citations a{color:var(--terra);text-decoration:underline;text-underline-offset:2px}
 .research-citations a:hover{opacity:.7}
 /* ANIMATIONS */
 .fade-in{opacity:0;transform:translateY(30px);transition:opacity .8s ease,transform .8s ease}
@@ -175,7 +167,7 @@ footer{padding:64px 24px 32px;background:#06060A;color:var(--text)}
 .trust-grid{grid-template-columns:1fr;gap:24px}
 .footer-top{grid-template-columns:1fr}
 .newsletter-form{flex-direction:column}
-.newsletter-form input{border-right:1.5px solid rgba(255,255,255,.15);border-bottom:none}
+.newsletter-form input{border-right:1.5px solid var(--sage);border-bottom:none}
 .top-bar{gap:16px;font-size:.65rem;padding:8px 16px}
 }
 @media(max-width:480px){
@@ -195,7 +187,7 @@ footer{padding:64px 24px 32px;background:#06060A;color:var(--text)}
 <!-- NAV -->
 <nav id="navbar">
 <div class="nav-inner">
-<a href="#" class="logo">Caliber<span>Peptides</span></a>
+<a href="#" class="logo">Vita<span>Revive</span></a>
 <div class="nav-links">
 <a href="#about">About</a>
 <a href="#products">Catalog</a>
@@ -221,8 +213,8 @@ footer{padding:64px 24px 32px;background:#06060A;color:var(--text)}
 <!-- HERO -->
 <section class="hero">
 <div class="hero-content">
-<h1>Precision compounds. Zero compromises.</h1>
-<p class="hero-sub">Batch produced, batch tested research peptide compounds. Manufactured in the USA to exacting purity standards. For serious researchers only.</p>
+<h1>Direct from the lab.</h1>
+<p class="hero-sub">Batch produced, batch tested research peptide compounds. Manufactured in the USA to exacting purity standards.</p>
 <a href="#products" class="btn btn-primary">View Full Catalog</a>
 </div>
 </section>
@@ -259,7 +251,7 @@ footer{padding:64px 24px 32px;background:#06060A;color:var(--text)}
 <div class="product-card fade-in">
 <div class="product-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="12" r="8"/></svg></div>
 <div class="product-info">
-<h3>Caliber Sculpt</h3>
+<h3>Caliber Peptides Sculpt</h3>
 <p class="product-cat">Research Peptide Compound</p>
 <a href="#" class="btn btn-outline">View Details</a>
 </div>
@@ -267,7 +259,7 @@ footer{padding:64px 24px 32px;background:#06060A;color:var(--text)}
 <div class="product-card fade-in">
 <div class="product-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="12" r="8"/></svg></div>
 <div class="product-info">
-<h3>Caliber Sculpt Pro</h3>
+<h3>Caliber Peptides Sculpt Pro</h3>
 <p class="product-cat">Advanced Peptide Compound</p>
 <a href="#" class="btn btn-outline">View Details</a>
 </div>
@@ -275,7 +267,7 @@ footer{padding:64px 24px 32px;background:#06060A;color:var(--text)}
 <div class="product-card fade-in">
 <div class="product-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="12" r="8"/></svg></div>
 <div class="product-info">
-<h3>Caliber Ignite</h3>
+<h3>Caliber Peptides Ignite</h3>
 <p class="product-cat">Research Peptide Blend</p>
 <a href="#" class="btn btn-outline">View Details</a>
 </div>
@@ -283,7 +275,7 @@ footer{padding:64px 24px 32px;background:#06060A;color:var(--text)}
 <div class="product-card fade-in">
 <div class="product-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="12" r="8"/></svg></div>
 <div class="product-info">
-<h3>Caliber Restore</h3>
+<h3>Caliber Peptides Restore</h3>
 <p class="product-cat">Recovery Compound</p>
 <a href="#" class="btn btn-outline">View Details</a>
 </div>
@@ -291,7 +283,7 @@ footer{padding:64px 24px 32px;background:#06060A;color:var(--text)}
 <div class="product-card fade-in">
 <div class="product-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="12" r="8"/></svg></div>
 <div class="product-info">
-<h3>Caliber Recharge</h3>
+<h3>Caliber Peptides Recharge</h3>
 <p class="product-cat">Research Peptide Blend</p>
 <a href="#" class="btn btn-outline">View Details</a>
 </div>
@@ -299,7 +291,7 @@ footer{padding:64px 24px 32px;background:#06060A;color:var(--text)}
 <div class="product-card fade-in">
 <div class="product-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="12" r="8"/></svg></div>
 <div class="product-info">
-<h3>Caliber Rise</h3>
+<h3>Caliber Peptides Rise</h3>
 <p class="product-cat">Growth Compound</p>
 <a href="#" class="btn btn-outline">View Details</a>
 </div>
@@ -307,7 +299,7 @@ footer{padding:64px 24px 32px;background:#06060A;color:var(--text)}
 <div class="product-card fade-in">
 <div class="product-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="12" r="8"/></svg></div>
 <div class="product-info">
-<h3>Caliber Glow</h3>
+<h3>Caliber Peptides Glow</h3>
 <p class="product-cat">Research Peptide Compound</p>
 <a href="#" class="btn btn-outline">View Details</a>
 </div>
@@ -315,7 +307,7 @@ footer{padding:64px 24px 32px;background:#06060A;color:var(--text)}
 <div class="product-card fade-in">
 <div class="product-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="12" r="8"/></svg></div>
 <div class="product-info">
-<h3>Caliber Balance</h3>
+<h3>Caliber Peptides Balance</h3>
 <p class="product-cat">Recovery Compound</p>
 <a href="#" class="btn btn-outline">View Details</a>
 </div>
@@ -640,7 +632,7 @@ footer{padding:64px 24px 32px;background:#06060A;color:var(--text)}
 <div class="footer-inner">
 <div class="footer-top">
 <div class="footer-brand">
-<div class="logo">Caliber<span style="color:var(--accent)">Peptides</span></div>
+<div class="logo">Vita<span style="color:var(--terra)">Revive</span></div>
 <p>Research-grade peptide compounds. Batch produced, batch tested in the USA.</p>
 </div>
 <div class="footer-col">
@@ -658,14 +650,13 @@ footer{padding:64px 24px 32px;background:#06060A;color:var(--text)}
 <div class="footer-col">
 <h4>Connect</h4>
 <div class="social-icons">
-<a href="https://instagram.com/CaliberPeptides" aria-label="Instagram">IG</a>
-<a href="https://twitter.com/CaliberPeptides" aria-label="Twitter">TW</a>
-<a href="https://tiktok.com/@CaliberPeptides" aria-label="TikTok">TK</a>
+<a href="#" aria-label="LinkedIn">LI</a>
+<a href="#" aria-label="Twitter">TW</a>
 </div>
 </div>
 </div>
 <div class="footer-bottom">
-<p class="footer-tagline">Precision compounds. Ready to ship.</p>
+<p class="footer-tagline">Verified compounds. Ready to ship.</p>
 <p class="footer-copy">&copy; 2026 Caliber Peptides. All rights reserved.</p>
 <div class="footer-disclaimer">The statements made on this website have not been evaluated by the U.S. Food and Drug Administration. The products offered are not intended to diagnose, treat, cure, or prevent any disease. Caliber Peptides is not a compounding pharmacy or chemical compounding facility as defined under Section 503A of the Federal Food, Drug, and Cosmetic Act. All products are sold strictly for research purposes only and are not for human or animal consumption.</div>
 </div>
