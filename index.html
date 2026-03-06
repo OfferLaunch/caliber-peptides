@@ -59,16 +59,46 @@ nav.scrolled{box-shadow:0 2px 20px rgba(45,59,45,.08)}
 .products-header{text-align:center;margin-bottom:64px}
 .products-header h2{font-size:clamp(1.8rem,4vw,2.8rem);color:var(--forest)}
 .products-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;max-width:1200px;margin:0 auto}
-.product-card{background:var(--white);overflow:hidden;transition:transform .4s ease,box-shadow .4s ease}
-.product-card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(45,59,45,.08)}
+/* product-card styles below */
 .product-img{aspect-ratio:1/1;background:var(--euca);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
-.product-img::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,var(--sage) 0%,var(--euca) 50%,var(--blush) 100%);opacity:.5}
-.product-img svg{position:relative;z-index:1;width:48px;height:48px;opacity:.3}
+.product-img::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,var(--sage) 0%,var(--euca) 50%,var(--blush) 100%);opacity:.3}
+/* CSS Vial */
+.vial-wrap{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center}
+.vial{width:42px;border-radius:0 0 8px 8px;position:relative;overflow:hidden}
+.vial-body{height:90px;border-radius:0 0 8px 8px;position:relative;overflow:hidden}
+.vial-body::after{content:'';position:absolute;left:6px;top:0;bottom:0;width:8px;background:linear-gradient(180deg,rgba(255,255,255,.25) 0%,rgba(255,255,255,.05) 100%);border-radius:4px}
+.vial-cap{width:28px;height:16px;border-radius:4px 4px 0 0;margin:0 auto}
+.vial-neck{width:20px;height:8px;background:rgba(200,200,200,.6);margin:0 auto;border-radius:0}
+.vial-label{position:absolute;bottom:10px;left:50%;transform:translateX(-50%);font-size:.45rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.7);white-space:nowrap}
+.vial-ml{font-size:.6rem;color:var(--forest);opacity:.45;margin-top:8px;font-weight:500;letter-spacing:.03em}
+/* Vial color variants */
+.vial-forest .vial-body{background:linear-gradient(180deg,#2D3B2D 0%,#1a251a 100%)}
+.vial-forest .vial-cap{background:var(--terra)}
+.vial-amber .vial-body{background:linear-gradient(180deg,#3d2b1a 0%,#2a1d10 100%)}
+.vial-amber .vial-cap{background:var(--gold)}
+.vial-slate .vial-body{background:linear-gradient(180deg,#3a3f4a 0%,#252830 100%)}
+.vial-slate .vial-cap{background:var(--sage)}
+.vial-teal .vial-body{background:linear-gradient(180deg,#1a3a3a 0%,#0f2424 100%)}
+.vial-teal .vial-cap{background:#5a9a8a}
+.vial-plum .vial-body{background:linear-gradient(180deg,#2d1f3d 0%,#1a1228 100%)}
+.vial-plum .vial-cap{background:#8a6aaa}
+.vial-navy .vial-body{background:linear-gradient(180deg,#1a2540 0%,#0f1828 100%)}
+.vial-navy .vial-cap{background:#6a8ab0}
+.vial-charcoal .vial-body{background:linear-gradient(180deg,#2a2a2a 0%,#1a1a1a 100%)}
+.vial-charcoal .vial-cap{background:var(--terra)}
+.vial-wine .vial-body{background:linear-gradient(180deg,#3d1a2a 0%,#281018 100%)}
+.vial-wine .vial-cap{background:#c47a8a}
 .product-info{padding:28px 24px}
 .product-info h3{font-size:1.15rem;margin-bottom:6px;font-weight:500}
-.product-info .product-cat{font-size:.75rem;color:var(--sage);font-weight:500;letter-spacing:.04em;text-transform:uppercase;margin-bottom:16px}
-.product-info .product-ruo{font-size:.65rem;color:var(--terra);font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-bottom:20px;padding:6px 0;border-top:1px solid var(--euca)}
-.product-info .btn-outline{padding:12px 28px;font-size:.75rem;width:100%;text-align:center}
+.product-info .product-cat{font-size:.75rem;color:var(--sage);font-weight:500;letter-spacing:.04em;text-transform:uppercase;margin-bottom:4px}
+.product-info .product-specs{font-size:.75rem;color:var(--forest);opacity:.5;font-weight:400;margin-bottom:12px}
+.product-info .product-ruo{font-size:.6rem;color:var(--terra);font-weight:600;letter-spacing:.1em;text-transform:uppercase;margin-bottom:16px;padding:5px 10px;border:1px solid rgba(196,116,90,.2);display:inline-block;background:rgba(196,116,90,.04)}
+.product-price{font-family:'Playfair Display',serif;font-size:1.6rem;color:var(--forest);font-weight:600;margin-bottom:16px}
+.product-info .btn-cart{display:block;padding:14px 28px;font-size:.75rem;width:100%;text-align:center;background:var(--forest);color:var(--cream);border:none;font-family:'DM Sans',sans-serif;font-weight:600;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;transition:all .35s ease}
+.product-info .btn-cart:hover{background:var(--terra)}
+.product-card{background:var(--white);overflow:hidden;transition:transform .4s ease,box-shadow .4s ease;border:1px solid rgba(168,181,160,.1)}
+.product-card:hover{transform:translateY(-6px);box-shadow:0 16px 48px rgba(45,59,45,.12)}
+.products-count{display:inline-block;font-size:.7rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);border:1px solid var(--gold);padding:4px 12px;margin-top:16px}
 /* COA SECTION */
 .coa{padding:100px 24px;background:var(--white)}
 .coa-inner{max-width:900px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
@@ -79,7 +109,15 @@ nav.scrolled{box-shadow:0 2px 20px rgba(45,59,45,.08)}
 .coa-visual .coa-purity{font-family:'Playfair Display',serif;font-size:3.5rem;color:var(--forest);font-weight:600;line-height:1}
 .coa-visual .coa-label{font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--sage);margin-top:8px;font-weight:500}
 .coa-visual .coa-methods{font-size:.8rem;color:var(--forest);opacity:.5;margin-top:24px;font-weight:300;line-height:1.8}
+.coa-links{margin-top:24px;display:flex;flex-direction:column;gap:6px}
+.coa-links a{font-size:.75rem;font-weight:500;color:var(--forest);letter-spacing:.03em;text-decoration:underline;text-underline-offset:3px;transition:color .3s}
+.coa-links a:hover{color:var(--terra)}
 .section-label{font-size:.75rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--sage);margin-bottom:16px}
+/* Trust Signals */
+.trust-signals{padding:80px 24px;background:var(--forest);color:var(--cream)}
+.trust-signals-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;max-width:1000px;margin:0 auto;text-align:center}
+.trust-signal-item .trust-signal-num{font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:600;color:var(--gold);margin-bottom:8px}
+.trust-signal-item .trust-signal-label{font-size:.8rem;font-weight:400;opacity:.7;letter-spacing:.03em}
 /* HOW IT WORKS */
 .how{padding:120px 24px;background:var(--cream)}
 .how-header{text-align:center;margin-bottom:72px}
@@ -165,6 +203,7 @@ footer{padding:64px 24px 32px;background:var(--forest);color:var(--cream)}
 .products-grid{grid-template-columns:1fr 1fr;gap:20px}
 .steps{grid-template-columns:1fr;gap:40px}
 .trust-grid{grid-template-columns:1fr;gap:24px}
+.trust-signals-grid{grid-template-columns:repeat(2,1fr);gap:24px}
 .footer-top{grid-template-columns:1fr}
 .newsletter-form{flex-direction:column}
 .newsletter-form input{border-right:1.5px solid var(--sage);border-bottom:none}
@@ -246,70 +285,95 @@ footer{padding:64px 24px 32px;background:var(--forest);color:var(--cream)}
 <div class="products-header fade-in">
 <p class="section-label">Product Catalog</p>
 <h2>Explore Our Compounds</h2>
+<div class="products-count">8 Compounds Available</div>
 </div>
 <div class="products-grid">
 <div class="product-card fade-in">
-<div class="product-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="12" r="8"/></svg></div>
+<div class="product-img"><div class="vial-wrap"><div class="vial vial-forest"><div class="vial-cap"></div><div class="vial-neck"></div><div class="vial-body"><span class="vial-label">SEMA</span></div></div><span class="vial-ml">2 ml</span></div></div>
 <div class="product-info">
 <h3>Caliber Semaglutide</h3>
 <p class="product-cat">GLP-1 Receptor Agonist</p>
-<a href="#" class="btn btn-outline">View Details</a>
+<p class="product-specs">5mg lyophilized &middot; 2ml vial</p>
+<span class="product-ruo">For Research Use Only</span>
+<div class="product-price">$89</div>
+<button class="btn-cart">Add to Cart</button>
 </div>
 </div>
 <div class="product-card fade-in">
-<div class="product-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="12" r="8"/></svg></div>
+<div class="product-img"><div class="vial-wrap"><div class="vial vial-amber"><div class="vial-cap"></div><div class="vial-neck"></div><div class="vial-body"><span class="vial-label">RETA</span></div></div><span class="vial-ml">2 ml</span></div></div>
 <div class="product-info">
 <h3>Caliber Retatrutide</h3>
 <p class="product-cat">Triple Receptor Agonist</p>
-<a href="#" class="btn btn-outline">View Details</a>
+<p class="product-specs">5mg lyophilized &middot; 2ml vial</p>
+<span class="product-ruo">For Research Use Only</span>
+<div class="product-price">$119</div>
+<button class="btn-cart">Add to Cart</button>
 </div>
 </div>
 <div class="product-card fade-in">
-<div class="product-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="12" r="8"/></svg></div>
+<div class="product-img"><div class="vial-wrap"><div class="vial vial-slate"><div class="vial-cap"></div><div class="vial-neck"></div><div class="vial-body"><span class="vial-label">TESA</span></div></div><span class="vial-ml">2 ml</span></div></div>
 <div class="product-info">
 <h3>Caliber Tesamorelin</h3>
 <p class="product-cat">GHRH Analog</p>
-<a href="#" class="btn btn-outline">View Details</a>
+<p class="product-specs">5mg lyophilized &middot; 2ml vial</p>
+<span class="product-ruo">For Research Use Only</span>
+<div class="product-price">$79</div>
+<button class="btn-cart">Add to Cart</button>
 </div>
 </div>
 <div class="product-card fade-in">
-<div class="product-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="12" r="8"/></svg></div>
+<div class="product-img"><div class="vial-wrap"><div class="vial vial-teal"><div class="vial-cap"></div><div class="vial-neck"></div><div class="vial-body"><span class="vial-label">BPC/TB</span></div></div><span class="vial-ml">3 ml</span></div></div>
 <div class="product-info">
 <h3>Caliber BPC-157 / TB-500</h3>
 <p class="product-cat">Research Peptide Blend</p>
-<a href="#" class="btn btn-outline">View Details</a>
+<p class="product-specs">10mg blend &middot; 3ml vial</p>
+<span class="product-ruo">For Research Use Only</span>
+<div class="product-price">$69</div>
+<button class="btn-cart">Add to Cart</button>
 </div>
 </div>
 <div class="product-card fade-in">
-<div class="product-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="12" r="8"/></svg></div>
+<div class="product-img"><div class="vial-wrap"><div class="vial vial-plum"><div class="vial-cap"></div><div class="vial-neck"></div><div class="vial-body"><span class="vial-label">NAD+</span></div></div><span class="vial-ml">5 ml</span></div></div>
 <div class="product-info">
 <h3>Caliber NAD+</h3>
 <p class="product-cat">Coenzyme Compound</p>
-<a href="#" class="btn btn-outline">View Details</a>
+<p class="product-specs">500mg lyophilized &middot; 5ml vial</p>
+<span class="product-ruo">For Research Use Only</span>
+<div class="product-price">$99</div>
+<button class="btn-cart">Add to Cart</button>
 </div>
 </div>
 <div class="product-card fade-in">
-<div class="product-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="12" r="8"/></svg></div>
+<div class="product-img"><div class="vial-wrap"><div class="vial vial-navy"><div class="vial-cap"></div><div class="vial-neck"></div><div class="vial-body"><span class="vial-label">CJC/IPA</span></div></div><span class="vial-ml">2 ml</span></div></div>
 <div class="product-info">
 <h3>Caliber CJC-1295 / Ipamorelin</h3>
 <p class="product-cat">Research Peptide Blend</p>
-<a href="#" class="btn btn-outline">View Details</a>
+<p class="product-specs">5mg blend &middot; 2ml vial</p>
+<span class="product-ruo">For Research Use Only</span>
+<div class="product-price">$74</div>
+<button class="btn-cart">Add to Cart</button>
 </div>
 </div>
 <div class="product-card fade-in">
-<div class="product-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="12" r="8"/></svg></div>
+<div class="product-img"><div class="vial-wrap"><div class="vial vial-charcoal"><div class="vial-cap"></div><div class="vial-neck"></div><div class="vial-body"><span class="vial-label">GHK/EPI</span></div></div><span class="vial-ml">2 ml</span></div></div>
 <div class="product-info">
 <h3>Caliber GHK-Cu / Epithalon</h3>
 <p class="product-cat">Research Peptide Blend</p>
-<a href="#" class="btn btn-outline">View Details</a>
+<p class="product-specs">5mg blend &middot; 2ml vial</p>
+<span class="product-ruo">For Research Use Only</span>
+<div class="product-price">$84</div>
+<button class="btn-cart">Add to Cart</button>
 </div>
 </div>
 <div class="product-card fade-in">
-<div class="product-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="12" r="8"/></svg></div>
+<div class="product-img"><div class="vial-wrap"><div class="vial vial-wine"><div class="vial-cap"></div><div class="vial-neck"></div><div class="vial-body"><span class="vial-label">PT-141</span></div></div><span class="vial-ml">3 ml</span></div></div>
 <div class="product-info">
 <h3>Caliber PT-141</h3>
 <p class="product-cat">Melanocortin Receptor Agonist</p>
-<a href="#" class="btn btn-outline">View Details</a>
+<p class="product-specs">10mg lyophilized &middot; 3ml vial</p>
+<span class="product-ruo">For Research Use Only</span>
+<div class="product-price">$64</div>
+<button class="btn-cart">Add to Cart</button>
 </div>
 </div>
 </div>
@@ -547,6 +611,14 @@ footer{padding:64px 24px 32px;background:var(--forest);color:var(--cream)}
 <div class="coa-purity">99%+</div>
 <div class="coa-label">Verified Purity</div>
 <div class="coa-methods">HPLC Analysis<br>Mass Spectrometry<br>Certificate of Analysis Included</div>
+<div class="coa-links">
+<a href="coa/ignite.html">Retatrutide COA</a>
+<a href="coa/restore.html">BPC-157 COA</a>
+<a href="coa/recharge.html">NAD+ COA</a>
+<a href="coa/balance.html">CJC-1295/Ipamorelin COA</a>
+<a href="coa/glow.html">GHK-Cu COA</a>
+<a href="coa/rise.html">Sermorelin COA</a>
+</div>
 </div>
 </div>
 </section>
@@ -624,6 +696,28 @@ footer{padding:64px 24px 32px;background:var(--forest);color:var(--cream)}
 <input type="email" placeholder="Your email address" required>
 <button type="submit">Subscribe</button>
 </form>
+</div>
+</section>
+
+<!-- TRUST SIGNALS -->
+<section class="trust-signals">
+<div class="trust-signals-grid fade-in">
+<div class="trust-signal-item">
+<div class="trust-signal-num">2,400+</div>
+<div class="trust-signal-label">Orders Shipped</div>
+</div>
+<div class="trust-signal-item">
+<div class="trust-signal-num">99%+</div>
+<div class="trust-signal-label">Verified Purity</div>
+</div>
+<div class="trust-signal-item">
+<div class="trust-signal-num">Same-Day</div>
+<div class="trust-signal-label">Fulfillment</div>
+</div>
+<div class="trust-signal-item">
+<div class="trust-signal-num">Discreet</div>
+<div class="trust-signal-label">Packaging</div>
+</div>
 </div>
 </section>
 
